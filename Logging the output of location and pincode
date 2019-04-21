@@ -31,13 +31,11 @@ function theResponse(response) {
   cityPincode.innerHTML = jsonObject.string;
   icon.src = "Some-Web-page-With-Image" + jsonObject.weather[0].icon + ".png";
   temperature.innerHTML = parseInt(jsonObject.main.temp - 273) + "°";
-    .map((response: Response) => response.json()
-      .do(value => console.log(JSON.parse(JSON.stringify(obj))));
 }
 
 function httpRequestAsync(url, callback)
 {
-  console.log("hello");
+  console.log(JSON.parse(JSON.stringify(obj))));
     let httpRequest = new XMLHttpRequest();
     httpRequest.onreadystatechange = () => { 
         if (httpRequest.readyState == 4 && httpRequest.status == 200)
