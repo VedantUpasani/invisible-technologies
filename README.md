@@ -1,2 +1,2 @@
 # invisible-technologies
-Test
+Intended for test purposes
